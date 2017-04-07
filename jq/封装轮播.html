@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="js/jQuery.js" ></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			.box {
+				width: 500px;
+				height: 281px;
+				margin: 100px auto;
+				position: relative;
+			}
+			#box {
+				width: 500px;
+				height: 281px;
+				margin: 100px auto;
+				position: relative;
+			}
+			
+			.banner li{
+				width: 500px;
+				height: 281px;
+				position: absolute;
+			}
+			.aBtn {
+				width: 500px;
+				height: 44px;
+				position: absolute;
+				bottom: 2px;
+			}
+			
+			.aBtn li {
+				float: left;
+				border: 2px solid #ffffff;
+				margin: 0 8px;
+				cursor: pointer;
+				opacity: 0.5;
+			}
+			.aBtn .active{
+				opacity: 1;
+			}
+			a{
+				width: 60px;
+				height: 60px;
+				display: block;
+				background: #00FFFF;
+				position: absolute;
+				display: none;
+			}
+			.left{
+				left: 0;
+				top: 110px;
+				z-index: 1;
+				background: url(lb/btn.gif)no-repeat 0 0;
+			}
+			.right{
+				right: 0;
+				top: 110px;
+				background: url(lb/btn.gif)no-repeat 0 -60px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box">
+			<a href="JavaScript:;" class="left"></a>
+			<ul class="banner">
+				<li><img src="lb/143241.jpg" /></li>
+				<li><img src="lb/148018.jpg" /></li>
+				<li><img src="lb/229428.jpg" /></li>
+				<li><img src="lb/229447.jpg" /></li>
+				<li><img src="lb/229453.jpg" /></li>
+			</ul>
+			<a href="JavaScript:;" class="right"></a>
+			<ul class="aBtn">
+				<li class="active"><img src="lb/1.jpg" /></li>
+				<li><img src="lb/2.jpg" /></li>
+				<li><img src="lb/3.jpg" /></li>
+				<li><img src="lb/4.jpg" /></li>
+				<li><img src="lb/5.jpg" /></li>
+			</ul>
+		</div>
+	</body>
+	<script>
+
+		$("#box").a(5,500);
+	</script>
+</html>
